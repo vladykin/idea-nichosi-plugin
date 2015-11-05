@@ -1,0 +1,19 @@
+<idea-plugin version="2">
+
+    <id>name.vladykin.ideaplugins.nichosi</id>
+    <name>Nichosi!</name>
+    <version>1.0</version>
+
+    <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+    <idea-version since-build="131"/>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <actions>
+        <action id="Nichosi" class="name.vladykin.ideaplugins.nichosi.ShowAction" text="Show Nichosi">
+            <add-to-group group-id="HelpMenu" anchor="last"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt N"/>
+        </action>
+    </actions>
+
+</idea-plugin>
